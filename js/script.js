@@ -38,4 +38,23 @@ const arrayTeam = [
 
 console.log(arrayTeam);
 
+let cardMember = '';
+
+for(i = 0; i < arrayTeam.length; i++){
+    cardMember +=`
+    <div class="team-card">
+        <div class="card-image">
+            <img
+                src="${arrayTeam[i].imm}"
+                alt="${arrayTeam[i].imm}"
+              />
+        </div>
+        <div class="card-text">
+            <h3>${arrayTeam[i].nome}</h3>
+            <p>${arrayTeam[i].ruolo}</p>
+        </div>
+    </div>
+    `
+}
+
 
