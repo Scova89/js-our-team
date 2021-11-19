@@ -36,6 +36,15 @@ const arrayTeam = [
     },
 ];
 
+
+const arrayAggiuntivo = [
+    {
+        "imm":"img/new-team-member-01.jpg",
+        "nome": "Barbara Ramos",
+        "ruolo": "Graphic Designer"
+    }
+];
+
 console.log(arrayTeam);
 
 let cardMember = '';
@@ -56,5 +65,31 @@ for(i = 0; i < arrayTeam.length; i++){
     </div>
     `
 }
+
+document.querySelector('.team-container').innerHTML = cardMember;
+
+console.log(cardMember);
+
+
+let cardAggiuntive = '';
+
+for(i = 0; i < arrayAggiuntivo.length; i++){
+    cardAggiuntive +=`
+    <div class="team-card">
+        <div class="card-image">
+            <img
+                src="${arrayAggiuntivo[i].imm}"
+                alt="${arrayAggiuntivo[i].imm}"
+              />
+        </div>
+        <div class="card-text">
+            <h3>${arrayAggiuntivo[i].nome}</h3>
+            <p>${arrayAggiuntivo[i].ruolo}</p>
+        </div>
+    </div>
+    `
+}
+
+if()
 
 
